@@ -6,20 +6,12 @@ const Village = () => {
   const { personList } = useContext(smurfContext);
 
   return (
-    <div>
+    <div className="village">
       {personList
         ? personList.map(cv => {
             return <Smurf data={cv} key={cv.id} />;
           })
         : "No Smurfs Here"}
-
-      <button
-        onClick={() => {
-          console.log("personList", personList);
-        }}
-      >
-        this.state.
-      </button>
     </div>
   );
 };

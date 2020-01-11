@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import smurfContext from "../contexts/smurfContext";
 import formContext from "../contexts/formContext";
-import village from "./village";
 import axios from "axios";
 import Form from "./form";
 
@@ -50,14 +49,7 @@ const App = () => {
   }, [personList]);
 
   return (
-    <div>
-      <button
-        onClick={() => {
-          console.log("personList", personList);
-        }}
-      >
-        this.state.
-      </button>
+    <div className="master">
       <smurfContext.Provider value={{ personList }}>
         <formContext.Provider
           value={{ formValue, setFormValue, changeHandler, submitHandler }}

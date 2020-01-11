@@ -5,8 +5,9 @@ const Smurf = props => {
   return (
     <div className="contianer">
       <h1>{props.data.name}</h1>
-      <h2>{props.data.age}</h2>
-      <h3>{props.data.height}</h3>
+      <h2>
+        {props.data.age} | {props.data.height}{" "}
+      </h2>
     </div>
   );
 };
